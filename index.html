@@ -9,10 +9,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="format-detection" content="telephone=no">
 <base  />
-<link rel="canonical" href="index.html" /><link href="img_data/images/logo.png" rel="shortcut icon" type="image/x-icon" />
-<title>MC Studio</title>
-<link rel="icon" href="img_data/images/favicon.png" type="image/png">
-<link rel="shortcut icon" href="img_data/images/favicon.png" type="image/png">
+<link rel="canonical" href="https://phongthumc.com/" />
+<link rel="icon" href="img_data/images/logo.png" type="image/png" />
+<link rel="shortcut icon" href="img_data/images/logo.png" type="image/png" />
+<title>Phòng Thu MC</title>
 <meta name="keywords" content="MC Studio,phòng thu âm,phòng thu âm giá rẻ,thu âm đám cưới, quay MV" />
 <meta name="description" content="phòng thu âm Thanh Hoá.Chân thu âm bài hát.Hoà âm phối khí.Thu âm đám cưới.Thu âm quảng cáo. quay MV phòng thu giá rẻ.thu âm chuyên nghiệp." />
 <!-- google -->
@@ -442,17 +442,14 @@ product_attribute(id,id_attribute,value) -->        </nav>
 			</div>
 			<div class="col-sm-4 plr10">
 				<div class="video-list">
-											<div class="it-video" data-link="9NUs9DZLfLQ" style="background: url(../img.youtube.com/vi/3.jpg); background-size: 100%; background-position: center;">
-						</div>
-											<div class="it-video" data-link="jSzp5YDi5f4" style="background: url(../img.youtube.com/vi/1.jpg); background-size: 100%; background-position: center;">
-						</div>
-											<div class="it-video" data-link="6MJ0SOr4kEQ" style="background: url(../img.youtube.com/vi/2.jpg); background-size: 100%; background-position: center;">
-						</div>
-				
-									</div>
+					<div class="it-video" data-link="9NUs9DZLfLQ" style="background: url(../img.youtube.com/vi/3.jpg); background-size: 100%; background-position: center;">
+			</div> 
+					<div class="it-video" data-link="jSzp5YDi5f4" style="background: url(../img.youtube.com/vi/1.jpg); background-size: 100%; background-position: center;">
+			 </div>
+					 <div class="it-video" data-link="6MJ0SOr4kEQ" style="background: url(../img.youtube.com/vi/2.jpg); background-size: 100%; background-position: center;">
+					 </div>
+					
 			</div>
-		</div>
-	</div>
 </section>
 <script src="../unpkg.com/wavesurfer.js%407.12.8/dist/wavesurfer.min.js"></script>
 <div class="clearfix"></div>
@@ -524,7 +521,6 @@ product_attribute(id,id_attribute,value) -->        </nav>
 
         var videoItems = $('.it-video');
         var videoIndex = 0;
-        var videoTimer;
 
         function showVideo(index, autoplay) {
             if (!videoItems.length) {
@@ -542,20 +538,11 @@ product_attribute(id,id_attribute,value) -->        </nav>
             $('.video-list').animate({ scrollTop: current.position().top + $('.video-list').scrollTop() - 10 }, 350);
         }
 
-        function startVideoSlider() {
-            clearInterval(videoTimer);
-            videoTimer = setInterval(function() {
-                showVideo(videoIndex + 1, true);
-            }, 20000);
-        }
-
         videoItems.click(function(event) {
             showVideo(videoItems.index(this), true);
-            startVideoSlider();
         });
 
         showVideo(0, false);
-        startVideoSlider();
     });
 </script>		<div class="clearfix"></div>
     <footer class="footer">
