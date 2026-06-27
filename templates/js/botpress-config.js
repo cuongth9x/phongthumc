@@ -1,0 +1,32 @@
+window.botpress.init({
+    botId: "795fcea9-2158-432a-9fd1-62ed9e3a9db1",
+    clientId: "71841865-2c46-419a-9ad5-e5854c0e947e",
+    configuration: {
+        version: "v2",
+        fabImage: "https://files.bpcontent.cloud/2026/06/27/08/20260627085651-4Z2BNFQC.png",
+        website: {},
+        email: {},
+        phone: {},
+        termsOfService: {},
+        privacyPolicy: {},
+        color: "#d71920",
+        variant: "solid",
+        headerVariant: "solid",
+        themeMode: "light",
+        fontFamily: "inter",
+        radius: 4,
+        feedbackEnabled: false,
+        footer: "[⚡ Phòng Thu MC](https://phongthumc.com/)",
+        soundEnabled: false,
+        proactiveMessageEnabled: false,
+        proactiveBubbleMessage: "Xin chào 👋 Bạn cần tư vấn dịch vụ thu âm không?",
+        proactiveBubbleTriggerType: "afterDelay",
+        proactiveBubbleDelayTime: 3,
+        conversationHistory: true,
+        homePageEnabled: false,
+        mainCardEnabled: false,
+        conversationStartersEnabled: false,
+        conversationStarters: [],
+        conversationStartersDisplayStyle: "cards"
+    }
+});

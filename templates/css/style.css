@@ -864,6 +864,48 @@ ul.social-block li a{ text-align: center; line-height: 30px; height: 30px; width
 body.module .top-header{ position: static; }
 .hot-mail{ text-align: right; color: #fff; padding: 10px 0; }
 .hot-mail span{ display: inline-block; margin-left: 20px; }
+.hot-mail a{ color: #fff; text-decoration: none; }
+.hot-mail a:hover{ color: #e21f26; }
+
+.mc-chat-invite {
+    position: fixed;
+    right: 90px;
+    bottom: 26px;
+    z-index: 999998;
+    max-width: 260px;
+    padding: 12px 38px 12px 15px;
+    border: 0;
+    border-radius: 12px;
+    background: #fff;
+    color: #333;
+    font: 500 14px/1.4 Arial, sans-serif;
+    text-align: left;
+    cursor: pointer;
+    box-shadow: 0 5px 24px rgba(0, 0, 0, .2);
+}
+.mc-chat-invite::after {
+    content: "";
+    position: absolute;
+    right: -8px;
+    bottom: 17px;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    transform: rotate(45deg);
+}
+.mc-chat-invite strong {
+    display: block;
+    color: #d71920;
+    font-size: 15px;
+}
+@media (max-width: 480px) {
+    .mc-chat-invite {
+        right: 82px;
+        bottom: 22px;
+        max-width: 210px;
+        padding: 10px 13px;
+    }
+}
 .logo-top{ padding: 10px 0; }
 .d7-desktop{ display: none; position: absolute; top: 100%; right: 0; }
 .item-dv{ text-align: center; font-family: 'RobotoCondensed' }
