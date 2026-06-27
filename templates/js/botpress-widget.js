@@ -21,6 +21,26 @@
             return;
         }
 
+        window.botpress.on("webchat:initialized", function () {
+            window.setTimeout(function () {
+                window.botpress.open();
+            }, 3000);
+        });
+
+        window.botpress.on("webchat:opened", function () {
+            var invite = document.getElementById("mc-chat-invite");
+            if (invite) {
+                invite.style.display = "none";
+            }
+        });
+
+        window.botpress.on("webchat:closed", function () {
+            var invite = document.getElementById("mc-chat-invite");
+            if (invite) {
+                invite.style.display = "";
+            }
+        });
+
         var config = document.createElement("script");
         config.id = "mc-botpress-config";
         config.src = "templates/js/botpress-config.js";
