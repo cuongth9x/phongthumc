@@ -21,12 +21,6 @@
             return;
         }
 
-        window.botpress.on("webchat:initialized", function () {
-            window.setTimeout(function () {
-                window.botpress.open();
-            }, 3000);
-        });
-
         window.botpress.on("webchat:opened", function () {
             var invite = document.getElementById("mc-chat-invite");
             if (invite) {
