@@ -867,6 +867,46 @@ body.module .top-header{ position: static; }
 .hot-mail a{ color: #fff; text-decoration: none; }
 .hot-mail a:hover{ color: #e21f26; }
 
+/* Hotline nổi luôn hiển thị trên mọi màn hình */
+.floating-hotline{
+	position: fixed;
+	top: 105px;
+	right: 18px;
+	z-index: 10000;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	min-height: 54px;
+	padding: 8px 17px 8px 9px;
+	border: 2px solid rgba(255,255,255,.85);
+	border-radius: 32px;
+	background: linear-gradient(135deg,#f12b33,#b4070e);
+	color: #fff!important;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1.05;
+	text-decoration: none!important;
+	box-shadow: 0 8px 25px rgba(185,7,14,.48);
+	animation: floating-hotline-bob 2.4s ease-in-out infinite;
+}
+.floating-hotline i{
+	display: grid;
+	place-items: center;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	background: #fff;
+	color: #d20d15;
+	font-size: 18px;
+	animation: floating-hotline-ring 1.8s ease-in-out infinite;
+}
+.floating-hotline span,.floating-hotline small{display:block}.floating-hotline small{margin-bottom:4px;font-size:10px;letter-spacing:1.2px;opacity:.82}.floating-hotline:after{content:"";position:absolute;inset:-5px;border:2px solid rgba(241,43,51,.6);border-radius:inherit;animation:floating-hotline-pulse 1.8s ease-out infinite;pointer-events:none}.floating-hotline:hover,.floating-hotline:focus{color:#fff;filter:brightness(1.08)}
+@keyframes floating-hotline-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@keyframes floating-hotline-ring{0%,45%,100%{transform:rotate(0)}10%{transform:rotate(-16deg)}20%{transform:rotate(16deg)}30%{transform:rotate(-11deg)}40%{transform:rotate(11deg)}}
+@keyframes floating-hotline-pulse{0%{opacity:.8;transform:scale(.96)}75%,100%{opacity:0;transform:scale(1.14)}}
+@media(max-width:767px){.floating-hotline{top:auto;right:auto;bottom:18px;left:14px;min-height:48px;padding:6px 13px 6px 7px;font-size:14px}.floating-hotline i{width:32px;height:32px;font-size:16px}.floating-hotline small{font-size:9px}}
+@media(prefers-reduced-motion:reduce){.floating-hotline,.floating-hotline i,.floating-hotline:after{animation:none}}
+
 /* Nút hotline nổi bật ở đầu trang */
 .hot-mail span:first-child a{
 	position: relative;
