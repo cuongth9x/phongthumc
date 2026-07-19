@@ -867,6 +867,63 @@ body.module .top-header{ position: static; }
 .hot-mail a{ color: #fff; text-decoration: none; }
 .hot-mail a:hover{ color: #e21f26; }
 
+/* Nút hotline nổi bật ở đầu trang */
+.hot-mail span:first-child a{
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	gap: 7px;
+	padding: 7px 15px;
+	border-radius: 24px;
+	background: linear-gradient(135deg,#ef252d,#b90810);
+	color: #fff;
+	font-weight: 700;
+	letter-spacing: .2px;
+	box-shadow: 0 5px 16px rgba(226,31,38,.42);
+	animation: hotline-float 2.4s ease-in-out infinite;
+}
+.hot-mail span:first-child a:before{
+	content: "\f095";
+	font-family: FontAwesome;
+	font-size: 14px;
+	animation: hotline-ring 1.8s ease-in-out infinite;
+}
+.hot-mail span:first-child a:after{
+	content: "";
+	position: absolute;
+	inset: -4px;
+	border: 2px solid rgba(255,69,76,.65);
+	border-radius: inherit;
+	animation: hotline-pulse 1.8s ease-out infinite;
+	pointer-events: none;
+}
+.hot-mail span:first-child a:hover,
+.hot-mail span:first-child a:focus{
+	color: #fff;
+	background: linear-gradient(135deg,#ff3b42,#d10b13);
+	transform: translateY(-2px);
+}
+@keyframes hotline-float{
+	0%,100%{ transform: translateY(0); }
+	50%{ transform: translateY(-3px); }
+}
+@keyframes hotline-ring{
+	0%,45%,100%{ transform: rotate(0); }
+	10%{ transform: rotate(-14deg); }
+	20%{ transform: rotate(14deg); }
+	30%{ transform: rotate(-10deg); }
+	40%{ transform: rotate(10deg); }
+}
+@keyframes hotline-pulse{
+	0%{ opacity: .8; transform: scale(.96); }
+	75%,100%{ opacity: 0; transform: scale(1.15); }
+}
+@media (prefers-reduced-motion: reduce){
+	.hot-mail span:first-child a,
+	.hot-mail span:first-child a:before,
+	.hot-mail span:first-child a:after{ animation: none; }
+}
+
 .mc-chat-invite {
     position: fixed;
     right: 90px;
