@@ -64,6 +64,7 @@
 <script src="templates/js/home.js"></script>
 <script src="templates/js/module.js"></script>
 <script src="templates/js/jquery.nicescroll.min.js"></script>
+<script src="templates/js/mc-chatbot.js" defer></script>
 </head>
 <body class="">
 		<div class="fback-top"><i class="fa fa-angle-up"></i></div>
@@ -458,18 +459,25 @@ product_attribute(id,id_attribute,value) -->        </nav>
 		</div>
 	</div>
 </section>
-<script src="../unpkg.com/wavesurfer.js%407.12.8/dist/wavesurfer.min.js"></script>
 <div class="clearfix"></div>
 <section class="sec-play">
 	<div class="container">
-		<div class="playlist">
-			<p>NHỮNG CA KHÚC ĐƯỢC THU ÂM TẠI PHÒNG THU MC</p>
-
-<p><iframe frameborder="no" height="450" scrolling="no" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/mc-studio-377498494/&amp;color=%231d1d30&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true" width="100%"></iframe></p>
+		<div class="playlist soundcloud-playlist">
+			<div class="soundcloud-playlist__heading">
+				<span class="soundcloud-playlist__eyebrow">MC STUDIO · SOUNDCLOUD</span>
+				<h2>Những ca khúc thu âm tại MC Studio</h2>
+				<p>Nhấn nút phát để nghe các sản phẩm mới nhất của phòng thu.</p>
+			</div>
+			<div class="soundcloud-playlist__player">
+				<iframe title="Danh sách ca khúc của MC Studio trên SoundCloud" frameborder="0" height="450" scrolling="no" loading="lazy" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/mc-studio-377498494/&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=false&amp;visual=false" width="100%"></iframe>
+			</div>
 		</div>
 		
 	</div>
 </section>
+<style>
+.sec-play{padding:54px 0;background:#0f0f10}.soundcloud-playlist{max-width:1040px;margin:0 auto;padding:32px;background:linear-gradient(145deg,#202023,#151516);border:1px solid rgba(255,255,255,.08);border-radius:18px;box-shadow:0 20px 55px rgba(0,0,0,.28)}.soundcloud-playlist__heading{margin-bottom:24px}.soundcloud-playlist__eyebrow{display:block;margin-bottom:8px;color:#ff5500;font-size:12px;font-weight:700;letter-spacing:1.8px}.soundcloud-playlist__heading h2{margin:0 0 8px;color:#fff;font-size:28px;line-height:1.25;text-transform:uppercase}.soundcloud-playlist__heading p{margin:0;color:#aaa;font-size:15px}.soundcloud-playlist__player{overflow:hidden;background:#fff;border-radius:10px}.soundcloud-playlist__player iframe{display:block}@media(max-width:767px){.sec-play{padding:30px 0}.soundcloud-playlist{padding:20px 15px;border-radius:12px}.soundcloud-playlist__heading h2{font-size:21px}.soundcloud-playlist__player iframe{height:420px}}
+</style>
 <div class="clearfix mb20"></div>
 <style type="text/css">
   .marquee0 img{ padding: 5px; border: 1px solid #ccc; border-radius: 5px; }
